@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $('form').on('submit', function(e){
         e.preventDefault()
-        const inputUrlImg = $('urlImage').val();
+        const inputUrlImg = $('#urlImage').val();
         const novoItem = $('<li style="display: none"></li>');
         $(`<img src='${inputUrlImg}'/>`).appendTo(novoItem);
         $(
